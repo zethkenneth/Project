@@ -1,11 +1,12 @@
 import React from 'react';
 import wmsu from './wmsu.png';
+import './Navigation.css'
 
 const Navigation = () => {   
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="navbar-brand" >
-                <img src={wmsu} width="30" height="30" className="d-inline-block align-top" alt="..." /><strong>WMSU</strong> eClinic
+                <img src={wmsu} width="30" height="30" className="d-inline-block align-top" alt="..." /><strong> Western Mindanao State University </strong> 
             </div>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
@@ -19,7 +20,7 @@ const Navigation = () => {
                             <div className="nav-link" >About Us</div>
                         </li>
                         <li className="nav-item">
-                            <button type="button" className="btn btn-outline-primary">Log in</button>
+                        <button type="button" className="btn btn-outline-primary">Log in</button>
                         </li>
                     </ul>
                 </div> 
