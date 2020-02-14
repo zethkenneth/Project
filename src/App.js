@@ -1,27 +1,18 @@
 import React, { Component } from 'react';
-import './App.css';
-import Navigation from './Components/Navigation/Navigation';
-import Box from './Components/Box/Box';
-import Login from './Components/Login/Login';
-
-
-
-
+import { BrowserRouter as Router,Route,Switch,Redirect } from "react-router-dom";
+import Homepage from './Pages/Homepage/Homepage';
+import LogIn from './Pages/Login/Login';
 
 class App extends Component {
-  constructor(){
-    super();
-    this.state = {
-      route: 'Homepage'
-    }
-  }
-  
     render(){
        return (
-        <div className="App">      
-            <Navigation />
-            <Box />
-        </div>
+           <Router>
+              <Switch>
+                <Route exact path="/" component={Homepage} />
+                <Route exact path="/Login" component={LogIn} />
+                <Redirect to="/" />
+              </Switch>
+           </Router>
       );
     }
 }
