@@ -1,0 +1,33 @@
+.form-container{
+    position: absolute;
+    top: 20vh;
+    background: white;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px #000;
+    border: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+.form-control{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+}
+
+button{
+    font-family: 'Poppins', sans-serif;
+}
+
+input{
+    font-family: 'Poppins', sans-serif;
+}
+
+#wmsu {
+    width: 45%;
+    margin-left: 25%; 
+    margin-top: -50%;
+}
